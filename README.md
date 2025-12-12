@@ -85,7 +85,7 @@ python blur_subs.py input.mp4 output.mp4 --detect-every 5
 python blur_subs.py input.mp4 output.mp4 --detect-every 20
 ```
 
-Reduce false positives (recommended starting point):
+Reduce false positives (recommended starting point if false positives appear):
 ```bash
 python blur_subs.py input.mp4 output.mp4 --conf-thresh 0.3
 ```
@@ -160,8 +160,3 @@ python blur_subs.py input.mp4 output.mp4 --detect-every 5
 - This detects and masks *any* text it finds. It does not “know” what is subtitle text vs other on-screen text.
 - OCR accuracy varies by resolution, compression artifacts, and font style.
 - GPU mode depends on your PyTorch/CUDA environment and may not work out-of-the-box.
-
----
-
-## License
-Add a license file if you plan to distribute this publicly (MIT is common for small tools).
